@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Scada", sans-serif;
+  line-height: 1.5;
+  background: white;
+  color: #323232;
+}
+.avatar {
+  max-width: 200%;
+  width: 150px;
+  border-radius: 50px;
+}
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.link-item i {
+  margin-right: 6px;
+}
+.logo {
+  margin-left: 24px;
+  width: 10px 0;
+  height: 2px;
+  max-width: 50%;
+  padding-right: 100px;
+}
+.jobs {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: #323232;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+section:last-child {
+  border-bottom: none;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.my-name {
+  font-size: 48px;
+  line-height: 1;
+}
+.my-title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #799cd4;
+}
+.job-company {
+  font-weight: bold;
+}
+.experience {
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  .links,
+  job-title-container {
+    flex-direction: column;
+  }
+}
